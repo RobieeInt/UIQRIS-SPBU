@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Profile User - Admin.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <link rel="icon" href="#">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link href="./main.4e74689db090db0fe094.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container app-theme-white">
+        <div class="app-top-bar bg-midnight-white top-bar-text-light">
+
+        </div>
+        <!-- TOPBAR -->
+        <div class="app-header header-shadow">
+            <div class="container kero-container">
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__logo">
+                    <a href="#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Dashboard Admin" class="logo-src"></a>
+                </div>
+                <ul class="horizontal-nav-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-offset="10" data-display="static" aria-expanded="false">
+                            <i class="nav-icon-big typcn typcn-directions"></i>
+                            <span>Dashboards</span>
+                            <i class="nav-icon-pointer icon ion-ios-arrow-down"></i>
+                        </a>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-sm-left">
+                            <div class="scroll-area-xs">
+                                <div class="scrollbar-container">
+                                    <a class="dropdown-item" href="dashboard-spbu-qris.html">Dashboard QRIS</a>
+                                    <a class="dropdown-item" href="dashboard-spbu-flazz.html">Dashboard Topup Flazz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-offset="10" data-display="static" aria-expanded="false"  class="active">
+                            <i class="nav-icon-big typcn typcn-user-outline"></i>
+                            <span>Profile</span>
+                            <i class="nav-icon-pointer icon ion-ios-arrow-down"></i>
+                        </a>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-sm">
+                            <div class="scroll-area-xs">
+                                <div class="scrollbar-container">
+                                    <a class="dropdown-item active" href="dashboard-spbu-profile.html">User</a>
+                                    <a class="dropdown-item " href="dashboard-spbu-merchant.html">Merchant</a>
+                                    <a class="dropdown-item " href="dashboard-spbu-spbu.html">SPBU</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-offset="10" data-display="static" aria-expanded="false">
+                            <i class="nav-icon-big typcn typcn-export"></i>
+                            <span>Transactions</span>
+                            <i class="nav-icon-pointer icon ion-ios-arrow-down"></i>
+                        </a>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-sm">
+                            <div class="scroll-area-xs">
+                                <div class="scrollbar-container">
+                                    <a class="dropdown-item " href="dashboard-spbu-transaction-qris.html">QRIS Transactions</a>
+                                    <a class="dropdown-item " href="dashboard-spbu-transaction-topup.html">TopUp Transactions</a>
+                                    <a class="dropdown-item active" href="dashboard-spbu-transaction-fee.html"> Flazz Transactions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-offset="10" data-display="static" aria-expanded="false">
+                            <i class="nav-icon-big typcn typcn-document-text"></i>
+                            <span>Settlement</span>
+                            <i class="nav-icon-pointer icon ion-ios-arrow-down"></i>
+                        </a>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-sm">
+                            <div class="scroll-area-xs">
+                                <div class="scrollbar-container">
+                                    <a class="dropdown-item " href="dashboard-spbu-settlement-qris.html">QRIS Settlement</a>
+                                    <a class="dropdown-item" href="dashboard-spbu-settlement-topup.html">Flazz Settlement</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="header-dots">
+                            <div class="dropdown">
+                                <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 btn btn-link">
+                                    <i class="typcn typcn-cog-outline"></i>
+                                    <span class="badge badge-dot badge-dot-sm badge-danger">Pengaturan</span>
+                                </button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-menu-header mb-0">
+                                        <div class="dropdown-menu-header-inner bg-night-sky">
+                                            <div class="menu-header-image opacity-5" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
+                                            <div class="menu-header-content text-light">
+                                                <h5 class="menu-header-title">Pengaturan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
+
+                                        <li class="nav-item">
+                                            <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
+                                                <span>Edit Profil</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
+                                                <span>System</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item-divider nav-item"></li>
+                                        <li class="nav-item-btn text-center nav-item">
+                                            <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-btn-lg pr-0">
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- TOPBAR ABIS -->
+        <div class="app-main">
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="container kero-container">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div>
+                                        <div class="page-title-head center-elem">
+                                            <span class="d-inline-block pr-2">
+                                            <i class=""></i>
+                                        </span>
+                                            <span class="d-inline-block">Add Profile User</span>
+                                        </div>
+                                        <div class="page-title-subheading opacity-10">
+                                            <nav class="" aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item">
+                                                        <a href="javascript:void(0);">
+                                                            <i aria-hidden="true" class="fa fa-home"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="breadcrumb-item">
+                                                        <a href="javascript:void(0);"> Add Profile</a>
+                                                    </li>
+                                                    <li class="active breadcrumb-item" aria-current="page">
+                                                        User
+                                                    </li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Tables -->
+                    <div class="container kero-container mt-2">
+                        <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body"><h5 class="card-title">Add Profile</h5>
+                                                <form class="">
+                                                    <div class="position-relative form-group"><label for="exampleName" class="">Name</label><input name="Name" id="exampleName" placeholder="Input Your Name" type="Name" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input Email="Email" id="exampleEmail" placeholder="Input Your Email" type="Email" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="examplePassword" class="">Password</label><input name="password" id="examplePassword" placeholder="password" type="password" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input Phone="Phone" id="examplePhone" placeholder="Input Your Phone" type="Phone" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Address</label><input Phone="Phone" id="examplePhone" placeholder="Address" type="Phone" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleSelect" class="">Company</label><select name="select" id="exampleSelect" class="form-control">
+                                                        <option>PT. Datasys</option>
+                                                        <option>PT. Kimmas</option>
+                                                        <option>PT. Hexa</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="position-relative form-group"><label for="exampleSelect" class="">Role</label><select name="select" id="exampleSelect" class="form-control">
+                                                        <option>Admin</option>
+                                                        <option>Merchant</option>
+                                                        <option>SPBU</option>
+                                                    </select>
+                                                    </div>
+                                                    <button class="mt-1 btn btn-success">Save</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="accordion" class="accordion-wrapper mb-3">
+                                                    <div class="card">
+                                                        <div id="headingOne" class="card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                <h5 class="m-0 p-0">Keterangan Role Admin</h5>
+                                                            </button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne" class="collapse show">
+                                                            <div class="card-body">1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div id="headingTwo" class="b-radius-0 card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseTwo" class="text-left m-0 p-0 btn btn-link btn-block"><h5 class="m-0 p-0">
+                                                                Keterangan Role Merchant</h5></button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne2" class="collapse">
+                                                            <div class="card-body">2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div id="headingThree" class="card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block"><h5 class="m-0 p-0">
+                                                               Keterangan Role SPBU</h5></button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                                                            <div class="card-body">3. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <!-- Akhir Datatables -->
+                </div>
+                <!-- Footer -->
+                <div class="app-wrapper-footer">
+                    <div class="app-footer">
+                        <div class="container kero-container">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-right">
+                                    <ul class="header-megamenu nav">
+                                        <li class="nav-item">
+                                            <a data-placement="top" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
+                                                Footer Menu
+                                                <div class="badge badge-success ml-0 ml-1">
+                                                    <small>Old</small>
+                                                </div>
+                                                <i class="fa fa-angle-up ml-2 opacity-8"></i>
+                                            </a>
+                                            <div class="rm-max-width rm-pointers">
+                                                <div class="d-none popover-custom-content">
+                                                    <div class="dropdown-mega-menu dropdown-mega-menu-sm">
+                                                        <div class="grid-menu grid-menu-2col">
+                                                            <div class="no-gutters row">
+                                                                <div class="col-sm-6 col-xl-6">
+                                                                    <ul class="nav flex-column">
+                                                                        <li class="nav-item-header nav-item">Overview</li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon lnr-inbox"> </i><span>Contacts</span></a></li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon lnr-book"> </i><span>Incidents</span>
+                                                                            <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                                        </a></li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon lnr-picture"> </i><span>Companies</span></a></li>
+                                                                        <li class="nav-item"><a disabled="" href="javascript:void(0);" class="nav-link disabled"><i class="nav-link-icon lnr-file-empty"> </i><span>Dashboards</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-6 col-xl-6">
+                                                                    <ul class="nav flex-column">
+                                                                        <li class="nav-item-header nav-item">Sales &amp; Marketing</li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Queues</a></li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Resource Groups</a></li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Goal Metrics
+                                                                            <div class="ml-auto badge badge-warning">3</div>
+                                                                        </a></li>
+                                                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Campaigns</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AKHIR Footer -->
+            </div>
+        </div>
+        <!-- SETTING UI -->
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-outline-2x btn-outline-focus">
+            <i class="fa fa-sync-alt icon-anim-pulse fa-2x"></i>
+        </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="app-fluid-container">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fluid Containers
+                                                </div>
+                                                <div class="widget-subheading">Makes the app layout full width instead on container boxed!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="body-subnav-pills">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Pills Page Navigation Style
+                                                </div>
+                                                <div class="widget-subheading">Changes the page sub navigation style to pills!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                            Restore Default
+                        </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Top Bar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-topBar-cs-class" data-class="bg-plum-plate top-bar-text-light">
+                            Restore Default
+                        </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-topBar-cs-class" data-class="bg-primary top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-topBar-cs-class" data-class="bg-secondary top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-topBar-cs-class" data-class="bg-success top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-topBar-cs-class" data-class="bg-info top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-topBar-cs-class" data-class="bg-warning top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-topBar-cs-class" data-class="bg-danger top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-topBar-cs-class" data-class="bg-light top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-topBar-cs-class" data-class="bg-dark top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-topBar-cs-class" data-class="bg-focus top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-topBar-cs-class" data-class="bg-alternate top-bar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-topBar-cs-class" data-class="bg-vicious-stance top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-topBar-cs-class" data-class="bg-midnight-bloom top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-topBar-cs-class" data-class="bg-night-sky top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-topBar-cs-class" data-class="bg-slick-carbon top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-topBar-cs-class" data-class="bg-asteroid top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-topBar-cs-class" data-class="bg-royal top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-topBar-cs-class" data-class="bg-warm-flame top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-topBar-cs-class" data-class="bg-night-fade top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-topBar-cs-class" data-class="bg-sunny-morning top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-topBar-cs-class" data-class="bg-tempting-azure top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-topBar-cs-class" data-class="bg-amy-crisp top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-topBar-cs-class" data-class="bg-heavy-rain top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-topBar-cs-class" data-class="bg-mean-fruit top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-topBar-cs-class" data-class="bg-malibu-beach top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-topBar-cs-class" data-class="bg-deep-blue top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-topBar-cs-class" data-class="bg-ripe-malin top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-topBar-cs-class" data-class="bg-arielle-smile top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-topBar-cs-class" data-class="bg-plum-plate top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-topBar-cs-class" data-class="bg-happy-fisher top-bar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-topBar-cs-class" data-class="bg-happy-itmeo top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-topBar-cs-class" data-class="bg-mixed-hopes top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-topBar-cs-class" data-class="bg-strong-bliss top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-topBar-cs-class" data-class="bg-grow-early top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-topBar-cs-class" data-class="bg-love-kiss top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-topBar-cs-class" data-class="bg-premium-dark top-bar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-topBar-cs-class" data-class="bg-happy-green top-bar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Color Schemes
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="app-theme-white">
+                                            White Theme
+                                        </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="app-theme-gray">
+                                            Gray Theme
+                                        </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AKHIR STTING UI -->
+    </div>
+    <!-- Right drawer -->
+
+    <!-- akhir right drawer -->
+    <div class="app-drawer-overlay d-none animated fadeIn"></div>
+    <script type="text/javascript" src="./assets/scripts/main.4e74689db090db0fe094.js"></script>
+</body>
+
+</html>
